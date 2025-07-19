@@ -10,4 +10,5 @@ require("lazy").setup({
     { "akinsho/toggleterm.nvim", version = "*", config = "true" },
     { "github/copilot.vim" },
     { "tpope/vim-surround" },
+    { "windwp/nvim-autopairs", event = "InsertEnter", config = true },
 })
