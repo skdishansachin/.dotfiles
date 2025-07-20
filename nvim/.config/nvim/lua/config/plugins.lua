@@ -11,4 +11,5 @@ require("lazy").setup({
     { "github/copilot.vim" },
     { "tpope/vim-surround" },
     { "windwp/nvim-autopairs", event = "InsertEnter", config = true },
+    { "ziglang/zig.vim" },
 })
