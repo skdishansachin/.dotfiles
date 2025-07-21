@@ -31,7 +31,6 @@ require("lazy").setup({
     event = "InsertEnter",
     config = true,
   },
-  { "ziglang/zig.vim" },
   {
     "nvim-tree/nvim-tree.lua",
     dependencies = { "nvim-tree/nvim-web-devicons" },
