@@ -4,11 +4,20 @@ require("lazy").setup({
   { "neovim/nvim-lspconfig" },
   {
     "hrsh7th/nvim-cmp",
-    dependencies = { "hrsh7th/cmp-nvim-lsp" },
+    dependencies = {
+        "hrsh7th/cmp-nvim-lsp",
+        "L3MON4D3/LuaSnip",
+        "saadparwaiz1/cmp_luasnip",
+        "rafamadriz/friendly-snippets",
+    },
   },
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
+  },
+  {
+    "mason-org/mason.nvim",
+    opts = {}
   },
   { "EdenEast/nightfox.nvim" },
   {
@@ -44,5 +53,12 @@ require("lazy").setup({
         },
       })
     end,
+  },
+  {
+      "rust-lang/rust.vim",
+      ft = { "rust" },
+      init = function()
+        vim.g.rustfmt_autosave = 1
+      end,
   },
 })
