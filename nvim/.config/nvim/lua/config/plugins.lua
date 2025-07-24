@@ -61,4 +61,15 @@ require("lazy").setup({
         vim.g.rustfmt_autosave = 1
       end,
   },
+  {
+      'stevearc/conform.nvim',
+      config = function()
+          require('conform').setup({
+              formatters_by_ft = {
+                  go = { "goimports", "gofmt" },
+                  lua = { "stylua" },
+              }
+          })
+      end,
+  }
 })
