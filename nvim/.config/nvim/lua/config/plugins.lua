@@ -18,6 +18,12 @@ require("lazy").setup({
 	{
 		"mason-org/mason.nvim",
 		opts = {},
+		ensure_installed = {
+			"lua-language-server",
+			"stylua",
+			"goimports",
+			"gopls",
+		},
 	},
 	{ "EdenEast/nightfox.nvim" },
 	{
