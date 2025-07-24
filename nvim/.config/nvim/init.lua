@@ -1,4 +1,4 @@
-vim.g.mapleader = "/" -- leader key
+vim.g.mapleader = " "
 
 require("config.options")
 require("config.plugins")
