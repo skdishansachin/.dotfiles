@@ -28,11 +28,6 @@ require("lazy").setup({
 		"nvim-telescope/telescope-fzf-native.nvim",
 		build = "make",
 	},
-	{
-		"akinsho/toggleterm.nvim",
-		version = "*",
-		config = true,
-	},
 	{ "github/copilot.vim" },
 	{ "tpope/vim-surround" },
 	{
