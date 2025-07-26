@@ -746,6 +746,7 @@ require("lazy").setup({
 			-- Load the colorscheme here.
 			vim.cmd.colorscheme("carbonfox")
 		end,
+		"github/copilot.vim",
 	},
 
 	{ -- Auto closing pair plugin
